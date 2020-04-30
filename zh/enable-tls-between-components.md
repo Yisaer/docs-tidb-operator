@@ -877,9 +877,9 @@ category: how-to
      name: ${cluster_name}
      namespace: ${namespace}
     spec:
-     tlsClusster:
+     tlsCluster:
        enabled: true
-     version: v3.0.8
+     version: v3.1.0
      timezone: UTC
      pvReclaimPolicy: Retain
      pd:
@@ -935,7 +935,7 @@ category: how-to
        version: 6.0.1
      initializer:
        baseImage: pingcap/tidb-monitor-initializer
-       version: v3.0.8
+       version: v3.1.0
      reloader:
        baseImage: pingcap/tidb-monitor-reloader
        version: v1.0.1
@@ -1083,7 +1083,7 @@ category: how-to
     ```
 
 3. 使用 pd-ctl 连接 PD 集群。
-    
+
     由于我们刚才在配置 PD Server 端证书的时候，自定义填写了一些 `hosts`，所以需要通过这些 `hosts` 来连接 PD 集群。
 
     {{< copyable "shell-regular" >}}

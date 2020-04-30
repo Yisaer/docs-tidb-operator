@@ -893,9 +893,9 @@ In this step, you need to perform the following operations:
      name: ${cluster_name}
      namespace: ${namespace}
     spec:
-     tlsClusster:
+     tlsCluster:
        enabled: true
-     version: v3.0.8
+     version: v3.1.0
      timezone: UTC
      pvReclaimPolicy: Retain
      pd:
@@ -951,7 +951,7 @@ In this step, you need to perform the following operations:
        version: 6.0.1
      initializer:
        baseImage: pingcap/tidb-monitor-initializer
-       version: v3.0.8
+       version: v3.1.0
      reloader:
        baseImage: pingcap/tidb-monitor-reloader
        version: v1.0.1
